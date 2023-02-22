@@ -54,3 +54,7 @@ footer {
   width: 100%;
   box-sizing: border-box;
 }
+.recipe-img {
+  object-fit: cover;
+  object-position: center;
+}
