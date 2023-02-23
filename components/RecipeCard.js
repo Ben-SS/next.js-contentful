@@ -21,7 +21,12 @@ export default function RecipeCard({ recipe }) {
           <p>Takes approx { cookingTime } mins to make</p>
         </div>
         <div className="actions">
-          <Link href={'/recipes/' + slug}><a>Cook this</a></Link>
+          <Link style={{
+              color: '#fff',
+              background: '#f01b29',
+              padding: '16px 24px',
+              textDecoration: 'none'
+            }} href={'/recipes/' + slug}>Cook this</Link>
         </div>
       </div>
 
@@ -53,12 +58,6 @@ export default function RecipeCard({ recipe }) {
           margin-top: 20px;
           display: flex;
           justify-content: flex-end;
-        }
-        .actions a {
-          color: #fff;
-          background: #f01b29;
-          padding: 16px 24px;
-          text-decoration: none;
         }
       `}</style>
     </div>
